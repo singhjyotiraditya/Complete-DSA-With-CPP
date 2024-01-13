@@ -24,7 +24,7 @@ Welcome to the **Complete-DSA-With-CPP** repository! This repository is dedicate
    - Popular sorting algorithms (e.g., Bubble Sort, Merge Sort).
    - Efficient searching techniques (e.g., Binary Search).
 
-6. **Dynamic Programming:** [Link to Folder]
+6. **Dynamic Programming:** 
    - Introduction to dynamic programming.
    - Dynamic programming solutions for various problems.
 
