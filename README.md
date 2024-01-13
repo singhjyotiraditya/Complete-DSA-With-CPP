@@ -4,23 +4,23 @@ Welcome to the **Complete-DSA-With-CPP** repository! This repository is dedicate
 
 ## Contents
 
-1. **Arrays and Strings:** [Link to Folder]
+1. **Arrays and Strings:**
    - Introduction to arrays and strings in C++.
    - Various algorithms and problems related to arrays and strings.
 
-2. **Linked Lists:** [Link to Folder]
+2. **Linked Lists:** 
    - Implementation of linked lists and associated algorithms.
    - Problems and solutions to enhance your understanding.
 
-3. **Stacks and Queues:** [Link to Folder]
+3. **Stacks and Queues:** 
    - Introduction to stacks and queues.
    - Common problems and their solutions using C++.
 
-4. **Trees and Graphs:** [Link to Folder]
+4. **Trees and Graphs:** 
    - Binary trees, AVL trees, and other tree-related concepts.
    - Graph traversal algorithms and problems.
 
-5. **Sorting and Searching:** [Link to Folder]
+5. **Sorting and Searching:** 
    - Popular sorting algorithms (e.g., Bubble Sort, Merge Sort).
    - Efficient searching techniques (e.g., Binary Search).
 
