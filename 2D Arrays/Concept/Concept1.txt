@@ -1,0 +1,11 @@
+1--> Create 2D Array:
+    int arr[row][column];
+    if row=3; column=3 it will make a 3*3 matrix.
+
+2--> Taking Input
+     cin>>arr[i]arr[j]
+
+3--> Output
+    cout<<arr[i][j]    
+    
+     
