@@ -11,12 +11,34 @@ bool isPresent(int arr[][4], int target, int rows, int columns)
     {
         for (int col = 0; col < columns; col++)
         {
-            if (target == arr[row][col]){
+            if (target == arr[row][col])
+            {
                 return true;
             }
         }
     }
     return false;
+}
+
+int largestRowSum(int arr[][4], int rows, int columns)
+{
+    int rowIndex = -1;
+    int maxi = INT_MIN;
+    for (int row = 0; row < rows; row++)
+    {
+        int sum = 0;
+        for (int col = 0; col < columns; col++)
+        {
+            sum = sum + arr[row][col];
+        }
+        if (sum > maxi)
+        {
+            rowIndex = row;
+            maxi = sum;
+        }
+    }
+    cout<<"The maximum sum is at row index: "<<rowIndex<<endl;
+    return maxi;
 }
 
 int main()
@@ -26,7 +48,7 @@ int main()
     // int arr[3][4] = {1,2,3,4,5,6,7,8,9,10,//11,12};  //row-wise input
     // int arr[3][4] = {{1,11,111,1111}, {2,22,222,2222},{3,33,333,3333}};
 
-    cout<<"Enter Elements"<<endl;
+    cout << "Enter Elements" << endl;
     // Taking Input --> row wise input
     for (int row = 0; row < 3; row++)
     {
@@ -48,7 +70,7 @@ int main()
     */
 
     // Print
-    cout<<"Printing the Array"<<endl;
+    cout << "Printing the Array" << endl;
     for (int row = 0; row < 3; row++)
     {
         for (int col = 0; col < 4; col++)
@@ -58,45 +80,53 @@ int main()
         cout << endl;
     }
 
-/*
-    // Linear Search in 2D Arrays
-    int target;
-    cout<<"Enter the target : ";
-    cin>>target;
-    if (isPresent(arr, target, 3, 4))
-    {
-        cout << "Element Found" << endl;
-    }
-    else
-    {
-        cout << "Not Found" << endl;
-    }
-*/
+    /*
+        // Linear Search in 2D Arrays
+        int target;
+        cout<<"Enter the target : ";
+        cin>>target;
+        if (isPresent(arr, target, 3, 4))
+        {
+            cout << "Element Found" << endl;
+        }
+        else
+        {
+            cout << "Not Found" << endl;
+        }
+    */
 
-    //Row-Wise Sum
-    cout<<endl;
-    cout<<"Row-Wise Sum"<<endl;
+
+    // Row-Wise Sum
+    cout << endl;
+    cout << "Row-Wise Sum" << endl;
     for (int row = 0; row < 3; row++)
     {
-        int sum=0;
+        int sum = 0;
         for (int col = 0; col < 4; col++)
         {
-            sum=sum+arr[row][col];
+            sum = sum + arr[row][col];
         }
-        cout <<sum<< " ";
+        cout << sum << " ";
     }
 
-    //Column Wise sum
-    cout<<"Column-Wise Sum"<<endl;
+    // Column Wise sum
+    cout << endl;
+    cout << "Column-Wise Sum" << endl;
     for (int col = 0; col < 4; col++)
     {
-        int sum=0;
+        int sum = 0;
         for (int row = 0; row < 3; row++)
         {
-            sum=sum+arr[row][col];
+            sum = sum + arr[row][col];
         }
-        cout <<sum<< " ";
+        cout << sum << " ";
     }
+
+
+    // Largest Row Wise Sum
+    cout << endl;
+    int rowMaxSum = largestRowSum(arr, 3, 4);
+    cout << "Largest Row-Wise Sum: " << rowMaxSum << endl;
 
     return 0;
 }
